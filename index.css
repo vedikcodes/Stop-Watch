@@ -1,56 +1,97 @@
-body{
-    display: grid;
+/* index.css */
+
+body {
+    display: flex;
     justify-content: center;
     align-items: center;
     background: rgb(27, 222, 225);
     height: 100vh;
-    font-family:sans-serif;
+    font-family: sans-serif;
     margin: 0;
-    
 }
 
-.container{
-    height: 400px;
-    width: 400px;
-    border: 2px solid black;
-    border-radius: 50%;
-    text-align: center;
-    background: rgb(63, 183, 61);
-    
-    
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-.heading{
-    
+.stopwatch-container {
+    margin-right: 20px;
+}
+
+.heading {
     font-family: Georgia, 'Times New Roman', Times, serif;
-     
 }
 
-h1{
+h1 {
     font-size: 50px;
     color: black;
     text-align: center;
 }
 
-.timer{
-    margin-top: 150px;
-    font-size: 50px;
-    font-weight: 600;
+.circle {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    background: rgb(54, 196, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.Button{
+.timer {
+    font-size: 40px;
+    font-weight: 600;
+    color: black; /* Timer color set to black */
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
     margin-top: 20px;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     font-size: 15px;
-    border-radius: 50px;
-    box-shadow: 0px 1px 3px rgba(0,0,0,2);
-    padding: 0.5rem 0.5rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-    border: 2px solid transparent;
     background: rgb(72, 207, 202);
-
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: black;
+    border: 2px solid transparent;
 }
+
+.lap-container {
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+thead {
+    background-color: rgb(72, 207, 202);
+}
+
+#lapTableBody {
+    background-color: rgb(240, 240, 240);
+}
+
